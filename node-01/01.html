@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>node-01</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <script>
+      const people = {
+        name: "홍길동",
+        say: function () {
+          console.log(this);
+        },
+      };
+      people.say();
+      let sayPeople = people.say;
+      //node의 최상위 객체
+      //자바스크립트의 this는 누가 호출하느냐에 따라 달라진다.
+      sayPeople();
+    </script>
+  </body>
+</html>
