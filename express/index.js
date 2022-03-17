@@ -26,9 +26,12 @@ app.get("/board", (req, res) => {
     //res.send("<h1>Hello Express</h1>");
     res.sendFile(__dirname + "/board.html");
 });
-app.get("/user", (req, res) => {
+app.get("/user/:id", (req, res) => {
     //res.send("<h1>Hello Express</h1>");
-    res.sendFile(__dirname + "/user.html");
+    //res.sendFile(__dirname + "/user.html");
+    console.log(req.params.id);
+    console.log(req.url);
+    res.send(req.params.id + "님 안녕하세요");
 });
 
 app.listen(app.get("port"), () => {

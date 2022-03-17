@@ -5,3 +5,6 @@ a {
 li {
     list-style: none;
 }
+img {
+    width: 500px;
+}
