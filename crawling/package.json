@@ -1,22 +1,22 @@
 {
-    "name": "crawling",
-    "version": "1.0.0",
-    "description": "크롤링",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon index.js"
-    },
-    "author": "klowon1",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.26.1",
-        "cheerio": "^1.0.0-rc.10",
-        "dotenv": "^16.0.0",
-        "express": "^4.17.3",
-        "morgan": "^1.10.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.15"
-    }
+  "name": "crawling",
+  "version": "1.0.0",
+  "description": "크롤링",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "jjang051",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
