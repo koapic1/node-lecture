@@ -37,7 +37,7 @@ app.get("/gmarket/superdeal", (req, res) => {
         getNewsList.each((idx, item) => {
             //console.log(item);
             productList.push({
-                url: $(item).find("a").attr("href").split(",")[1],
+                url: $(item).find(".inner").children("a").attr("href").split(",'")[1],
                 thumb: $(item).find(".thumb").attr("src"),
                 title: $(item).find(".title").text(),
                 sale: $(item).find(".sale strong").text(),
@@ -45,6 +45,7 @@ app.get("/gmarket/superdeal", (req, res) => {
                 discount: $(item).find(".price del").text(),
                 buy: $(item).find(".buy strong").text(),
             });
+            console.log(item.url);
         });
         res.json(productList);
     });
