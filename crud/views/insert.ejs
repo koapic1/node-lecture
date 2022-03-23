@@ -1,0 +1,25 @@
+<%- include("include/header") -%>
+<div class="titleBox">
+    <h2>TODO INSERT</h2>
+</div>
+<div class="insertBox">
+    <form action="/insertProcess" method="POST">
+        <div class="item">
+            <label>
+                <span>오늘의 할 일</span>
+                <input type="text" name="title" placeholder="해야 할 일을 입력해 주세요.">
+            </label>
+        </div>
+        <div class="item">
+            <label>
+                <span>날짜</span>
+                <input type="text" name="date" placeholder="date">
+            </label>
+        </div>
+        <div class="btns">
+            <button class="btn submit" type="submit">확인</button>
+            <button class="btn reset" type="reset">취소</button>
+        </div>
+    </form>
+</div>
+<%- include("include/footer") -%>

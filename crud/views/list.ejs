@@ -1,0 +1,35 @@
+<%- include("include/header") -%>
+<div class="titleBox">
+    <h2>TODO LIST</h2>
+</div>
+<div class="listBox">
+    <ul>
+        <!--
+        <% for(let i = 0; i <todoList.length; i++) { %>
+        <li>
+            <a href="/detail/<%=todoList[i]._id %>" data-id="<%=todoList[i]._id %>">
+                <dl>
+                    <dt>No.<%=todoList[i]._id %></dt>
+                    <dd><p class="todo"><%=todoList[i].title %></p><span class = "date"><%=todoList[i].date %></span></dd>
+                </dl>
+            </a>
+        </li>
+        <% } %>
+        -->
+    <% todoList.forEach((item,idx) => { %>
+        <li>
+            <a href="/detail/<%=item._id %>" data-id="<%=item._id %>">
+                <dl>
+                    <dt>No.<%=item._id%></dt>
+                    <dd><p class="todo"><%=item.title %></p><span class = "date"><%=item.date %></span></dd>
+                </dl>
+            </a>
+        </li>
+        <% }) %>
+    </ul>
+    <div class="btns">
+        <a href="/insert" class="btn submit" type="submit">해야할 일</a>
+        <!-- <button class="btn reset" type="reset">취소</button> -->
+    </div>
+</div>
+<%- include("include/footer") -%>
